@@ -4,8 +4,8 @@ import time
 ec2 = boto3.client(
     'ec2',
     'eu-central-1',
-    aws_secret_access_key='S5i8+Ptu0pXKXTsNUTo0D820M3nnPv1bkcRCtfu4',
-    aws_access_key_id='AKIA3CAHKGQBBEXEWRVZ'
+    aws_secret_access_key='********',
+    aws_access_key_id='***********'
 )
 
 resp = ec2.create_key_pair(KeyName = 'boto')
@@ -18,8 +18,8 @@ file.close
 ec2_resource = boto3.resource(
     'ec2',
     'eu-central-1',
-    aws_secret_access_key='S5i8+Ptu0pXKXTsNUTo0D820M3nnPv1bkcRCtfu4',
-    aws_access_key_id='AKIA3CAHKGQBBEXEWRVZ'
+    aws_secret_access_key='********',
+    aws_access_key_id='*********'
     )
 print(ec2_resource)
 
